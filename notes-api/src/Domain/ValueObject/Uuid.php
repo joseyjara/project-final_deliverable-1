@@ -54,7 +54,7 @@ class Uuid extends StringLiteral
     /**
      * @return bool
      */
-    private function isValidV4()
+    public function isValidV4()
     {
         if (!preg_match(
             '/[a-f0-9]{8}\-[a-f0-9]{4}\-4[a-f0-9]{3}\-(8|9|a|b)[a-f0-9]{3}\-[a-f0-9]{12}/',
